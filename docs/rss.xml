@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Craig's Blog]]></title><description><![CDATA[Craig Palermo's personal blog]]></description><link>https://craigpalermo.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Mar 2020 22:53:54 GMT</lastBuildDate><item><title><![CDATA[Now's More Than Ever]]></title><description><![CDATA[If you’ve ever worked in an organization divided into multiple teams,
+segmented by product, let’s say, then you may have heard of an…]]></description><link>https://craigpalermo.com/nows-more-than-ever/</link><guid isPermaLink="false">https://craigpalermo.com/nows-more-than-ever/</guid><pubDate>Fri, 31 May 2019 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you’ve ever worked in an organization divided into multiple teams,
+segmented by product, let’s say, then you may have heard of an interesting
+idea from another team that you’ve wanted to implement for your own.
+You feel that their workflow, library, or the like could similarly
+benefit your team. However, you haven’t the time allocated to put it
+into practice. You’d need to justify to your higher-ups that it would
+be worth the investment, and your audience’s technical experience
+can make this any level of difficult.&lt;/p&gt;
+&lt;p&gt;From my experience, making the investment in the ways and means to improve
+a team’s quality of life, developer experience, and ostensibly the
+quality of the product early on can pay dividends later. The product
+and team culture will benefit from avoiding taking on new technical
+debt and producing more stable solutions from the start, as well as at
+each step of iteration, in addition to the perpetual excitement of
+staying ahead of the curve. Would you rather you and your team suffer through
+months of uncomfortable and frustrating steps in your daily workflow,
+or can you avoid it all by acting today? In the long run, now’s worth a lot
+more than ever. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[The Importance of Casual Cross-Team Collaboration]]></title><description><![CDATA[After a year and a half at my current job, I’ve started to do something
+different over the past couple months. Whenever I get the chance, I…]]></description><link>https://craigpalermo.com/cross-team-collaboration/</link><guid isPermaLink="false">https://craigpalermo.com/cross-team-collaboration/</guid><pubDate>Sat, 25 May 2019 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;After a year and a half at my current job, I’ve started to do something
+different over the past couple months. Whenever I get the chance, I try
+to chat with engineers from other teams. It may seem obvious, but in the
+course of these casual conversations, I’ve learned a lot about how other
+teams work within the organization and have even shared solutions
+between our teams to the benefit of the entire organization. Had we not
+taken the opportunity to familiarize ourselves with our
+counterparts from other product teams, we would have missed out on
+these shared wins.&lt;/p&gt;
+&lt;p&gt;Save for organized company meetings, developers (and really employees in any role)
+at companies of all sizes and layouts may not have the opportunity to organically
+share their ideas and work product with members of other teams. This
+includes anything from common components usable by many applications
+to best practices that could benefit multiple teams. While Slack channels
+and quarterly all-hands meetings help to share big-picture successes, nothing
+beats talk over coffee when you want to get informal exposure for your
+pet project before it’s ready for prime time. &lt;/p&gt;
+&lt;p&gt;Nowadays, teams might be divided by office, geolocation, and timezone,
+making it even harder to get to know your neighbor. Plenty of resources
+can help teams better manage the challenges of remote work, but the idea
+remains the same. This effort can pay off greatly by allowing teams
+to share their best ideas, even when they’re not scheduled into anyone’s
+quarterly goals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Effect of Background JS Processes on UX Performance with React]]></title><description><![CDATA[My team recently encountered a problem with a React slider component.
+We spent a while investigating the root cause, but couldn’t identify
+a…]]></description><link>https://craigpalermo.com/slider-perf-demo/</link><guid isPermaLink="false">https://craigpalermo.com/slider-perf-demo/</guid><pubDate>Sun, 10 Mar 2019 18:00:23 GMT</pubDate><content:encoded>&lt;p&gt;My team recently encountered a problem with a React slider component.
+We spent a while investigating the root cause, but couldn’t identify
+a single source of the problem. However, I noticed that enabling an
+ad blocker to prevent 3rd party scripts from loading seemed to help.
+These scripts (everything from ads to tracking to fraud prevention)
+added numerous event listeners that would invoke functions on the same
+interactions that our component in question, in this case a range
+slider, needed to function. This caused the slider to become
+monetarily unresponsive and drastically decreased frame rates. This
+prevented React from making the necessary DOM updates to reflect user
+interactions, making it ultimately unusable from a UX
+perspective.&lt;/p&gt;
+&lt;p&gt;To see if I could recreate this effect, I wrote a simple application to
+simulate blocking work on the main thread that would delay React’s
+rendering, causing a framerate drop and the UI to become unresponsive.&lt;/p&gt;
+&lt;p&gt;Check out the &lt;a href=&quot;https://craigpalermo.github.io/slider-perf-demo&quot;&gt;live demo&lt;/a&gt;
+and try adjusting the parameters. The effects are especially noticeable
+on mobile devices, which we cannot forget to account for in 2019.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Reading List 2019]]></title><description><![CDATA[I’ve always had trouble finishing books once I’ve started them. New titles make their way
+onto the list, and inevitably pull me away from…]]></description><link>https://craigpalermo.com/2019-reading-list/</link><guid isPermaLink="false">https://craigpalermo.com/2019-reading-list/</guid><pubDate>Sun, 10 Mar 2019 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I’ve always had trouble finishing books once I’ve started them. New titles make their way
+onto the list, and inevitably pull me away from those in progress before I’ve
+finished. This year, I’m trying to break this habit by maintaining a reading list, which
+I hope will keep my choices more focused.&lt;/p&gt;
+&lt;h2&gt;Books I’ve finished in 2019:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Make-Your-Bed-Little-Things/dp/1455570249/ref=sr_1_1?crid=1JB12WJ3B2X0J&amp;#x26;keywords=make+your+bed&amp;#x26;qid=1550084523&amp;#x26;s=gateway&amp;#x26;sprefix=make+your%2Caps%2C137&amp;#x26;sr=8-1&quot;&gt;Make Your Bed: Little Things That Can Change Your Life…And Maybe the World&lt;/a&gt; by William H. McRaven&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Unfu-Yourself-Your-Head-into/dp/0062803832/ref=sr_1_1?crid=3JRLRUPS9M6MH&amp;#x26;keywords=unfuk+yourself&amp;#x26;qid=1550084578&amp;#x26;s=gateway&amp;#x26;sprefix=unf%2Caps%2C126&amp;#x26;sr=8-1&quot;&gt;Unfu*k Yourself&lt;/a&gt; by Gary John Bishop&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Fifth-Risk-Michael-Lewis/dp/1324002646&quot;&gt;The Fifth Risk&lt;/a&gt; Michael Lewis&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.com/Threat-Protects-America-Terror-Trump/dp/1250207576&quot;&gt;The Threat: How the FBI Protects America in the Age of Terror and Trump&lt;/a&gt; Andrew G. McCabe&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Welcome to my new home page! I haven’t taken the time lately to write,
+so I figured the first step would be to get a new notebook. This will…]]></description><link>https://craigpalermo.com/hello-world/</link><guid isPermaLink="false">https://craigpalermo.com/hello-world/</guid><pubDate>Wed, 13 Feb 2019 17:41:23 GMT</pubDate><content:encoded>&lt;p&gt;Welcome to my new home page!&lt;/p&gt;
+&lt;p&gt;I haven’t taken the time lately to write,
+so I figured the first step would be to get a new notebook. This will serve as a medium
+for me to document recent work, random thoughts, etc.&lt;/p&gt;</content:encoded></item></channel></rss>
