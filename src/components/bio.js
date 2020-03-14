@@ -37,13 +37,13 @@ const Bio = () => {
         flexDirection: `column`
       }}
     >
-      <div style={{
-        marginBottom: 0,
-      }}>
+      <p>
         <strong>{author.name}</strong> is a
         <div>{author.summary}</div>
         {` `}
-      </div>
+      </p>
+      <div>Connect on <a href="https://github.com/craigpalermo">GitHub</a> and <a
+        href="https://www.linkedin.com/in/craig-palermo-58858859/">LinkedIn</a></div>
     </div>
   )
 }
