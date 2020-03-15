@@ -26,3 +26,6 @@ custom domain kept resetting and provided a simple fix that I could add to the `
 Although I've only just started with GitHub Actions, I'm pleasantly surprised at how easy it makes setting up
 a simple cloud CI environment with almost no configuration. Its email notifications sent to your GitHub
 account email are also a nice way to receive updates about your build status.
+
+Now I'll never have to worry about where this site is hosted or how it's deployed; all I have to do is push
+changes to the Markdown or React content and GitHub takes care of the rest, for free!
