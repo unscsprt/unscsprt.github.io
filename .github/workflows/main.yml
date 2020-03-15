@@ -37,6 +37,8 @@ jobs:
     
     - name: Rebuild docs folder
       run: |
+        npm i
+        npm i -g gatsby
         npm run build
         git add -A
         git commit --amend --no-edit
