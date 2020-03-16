@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Craig's Blog]]></title><description><![CDATA[Craig Palermo's personal blog]]></description><link>https://craigpalermo.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Mar 2020 23:34:45 GMT</lastBuildDate><item><title><![CDATA[Now's More Than Ever]]></title><description><![CDATA[If you’ve ever worked in an organization divided into multiple teams,
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Craig's Blog]]></title><description><![CDATA[Craig Palermo's personal blog]]></description><link>https://craigpalermo.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Mar 2020 23:57:07 GMT</lastBuildDate><item><title><![CDATA[Building This Site with GitHub Actions]]></title><description><![CDATA[Yesterday, I was making some updates to this site and noticed that the process to publish updates was somewhat tedious.
+In order to publish…]]></description><link>https://craigpalermo.com/building-this-site-with-github-actions/</link><guid isPermaLink="false">https://craigpalermo.com/building-this-site-with-github-actions/</guid><pubDate>Sun, 15 Mar 2020 19:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Yesterday, I was making some updates to this site and noticed that the process to publish updates was somewhat tedious.
+In order to publish a change, I would need to manually run &lt;code class=&quot;language-text&quot;&gt;npm run build&lt;/code&gt;, commit and push the changes, then
+return the the GitHub repo’s settings to change the custom domain for GitHub pages back to &lt;code class=&quot;language-text&quot;&gt;craigpalermo.com&lt;/code&gt;. For
+some reason, this kept resetting each time I pushed changes to the &lt;code class=&quot;language-text&quot;&gt;docs&lt;/code&gt; folder. I figured it had something to do
+with the fact that I was serving the site from a custom directory, but I wasn’t sure exactly why.&lt;/p&gt;
+&lt;p&gt;Today, I had the inclination to try replicating this process with GitGub Actions. I hadn’t used Actions before, so I
+thought this would be a good place to start.&lt;/p&gt;
+&lt;p&gt;I modified the default Node.js action to create &lt;a href=&quot;https://github.com/craigpalermo/craigpalermo.com/blob/master/.github/workflows/main.yml&quot;&gt;this simple workflow&lt;/a&gt;.
+It performs the following steps whenever &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; changes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Checks out the repo&lt;/li&gt;
+&lt;li&gt;Installs NPM dependencies and Gatsby&lt;/li&gt;
+&lt;li&gt;Builds Gatsby static site&lt;/li&gt;
+&lt;li&gt;Commits changes (thanks to this &lt;a href=&quot;https://github.com/marketplace/actions/add-commit&quot;&gt;marketplace action&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gitname/react-gh-pages/issues/19#issuecomment-436148409&quot;&gt;This answer&lt;/a&gt; also explained why my
+custom domain kept resetting and provided a simple fix that I could add to the &lt;code class=&quot;language-text&quot;&gt;npm build&lt;/code&gt; script.&lt;/p&gt;
+&lt;p&gt;Although I’ve only just started with GitHub Actions, I’m pleasantly surprised at how easy it makes setting up
+a simple cloud CI environment with almost no configuration. Its email notifications sent to your GitHub
+account email are also a nice way to receive updates about your build status.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Now's More Than Ever]]></title><description><![CDATA[If you’ve ever worked in an organization divided into multiple teams,
 segmented by product, let’s say, then you may have heard of an…]]></description><link>https://craigpalermo.com/nows-more-than-ever/</link><guid isPermaLink="false">https://craigpalermo.com/nows-more-than-ever/</guid><pubDate>Fri, 31 May 2019 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;If you’ve ever worked in an organization divided into multiple teams,
 segmented by product, let’s say, then you may have heard of an interesting
 idea from another team that you’ve wanted to implement for your own.
