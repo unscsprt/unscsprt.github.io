@@ -1,3 +1,4 @@
+import "../style.scss"
 import Typography from "typography"
 import oceanBeachTheme from 'typography-theme-ocean-beach'
 

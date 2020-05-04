@@ -5,14 +5,25 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import DarkMode from "../components/DarkMode"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout
+      location={location}
+      title={siteTitle}
+      style={{
+        backgroundColor: "var(--bg)",
+        color: "var(--textNormal)",
+        transition: "color 0.2s ease-out, background 0.2s ease-out",
+        position: "relative",
+      }}
+    >
       <SEO title="All posts" />
+      <DarkMode />
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
