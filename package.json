@@ -2,7 +2,7 @@
   "name": "craigpalermo.com",
   "private": true,
   "description": "Craig's blog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Craig Palermo <email@craigp.me>",
   "dependencies": {
     "gatsby": "^2.19.7",
