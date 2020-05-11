@@ -34,16 +34,19 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        flexDirection: `column`
+        flexDirection: `column`,
       }}
     >
       <p>
-        <strong>{author.name}</strong> is a
-        <div>{author.summary}</div>
+        <strong>{author.name}</strong> is a<div>{author.summary}</div>
         {` `}
       </p>
-      <div>Connect on <a href="https://github.com/craigpalermo">GitHub</a> and <a
-        href="https://www.linkedin.com/in/craig-palermo-58858859/">LinkedIn</a></div>
+      <div>
+        Connect on <a href="https://github.com/craigpalermo">GitHub</a> and{" "}
+        <a href="https://www.linkedin.com/in/craig-palermo-58858859/">
+          LinkedIn
+        </a>
+      </div>
     </div>
   )
 }

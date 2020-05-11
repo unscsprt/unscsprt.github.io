@@ -1,10 +1,6 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import ToggleButton from "react-toggle-button"
-import Sun from "../assets/sun.svg"
-import Moon from "../assets/moon.svg"
-
-// TODO auto-detect browser preference and set dark mode based on that
 
 export default class DarkMode extends React.Component {
   render() {

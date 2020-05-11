@@ -19,10 +19,10 @@ GitHub's workflow automation feature. I hadn't used Actions before, so I thought
 I modified the default Node.js action to create [this simple workflow](https://github.com/craigpalermo/craigpalermo.com/blob/master/.github/workflows/main.yml).
 It performs the following steps whenever `master` changes:
 
-1) Checks out the repo
-1) Installs NPM dependencies and Gatsby
-1) Builds Gatsby static site
-1) Commits changes (thanks to this [marketplace action](https://github.com/marketplace/actions/add-commit))
+1. Checks out the repo
+1. Installs NPM dependencies and Gatsby
+1. Builds Gatsby static site
+1. Commits changes (thanks to this [marketplace action](https://github.com/marketplace/actions/add-commit))
 
 [This answer](https://github.com/gitname/react-gh-pages/issues/19#issuecomment-436148409) also explained why my
 custom domain kept resetting and provided a simple fix that I could add to the `npm build` script.

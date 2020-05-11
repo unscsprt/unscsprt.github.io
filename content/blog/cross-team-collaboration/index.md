@@ -20,7 +20,7 @@ includes anything from common components usable by many applications
 to best practices that could benefit multiple teams. While Slack channels
 and quarterly all-hands meetings help to share big-picture successes, nothing
 beats talk over coffee when you want to get informal exposure for your
-pet project before it's ready for prime time. 
+pet project before it's ready for prime time.
 
 Nowadays, teams might be divided by office, geolocation, and timezone,
 making it even harder to get to know your neighbor. Plenty of resources
