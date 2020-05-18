@@ -24,8 +24,8 @@ export default class DarkMode extends React.Component {
               onToggle={value => {
                 toggleTheme(!value ? "dark" : "light")
               }}
-              activeLabel={"Day"}
-              inactiveLabel={"Night"}
+              activeLabel={"Night"}
+              inactiveLabel={"Day"}
               ariaLabel={`Turn ${theme === "dark" ? "off" : "on"} dark mode`}
               colors={{
                 active: {
