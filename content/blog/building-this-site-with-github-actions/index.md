@@ -11,7 +11,7 @@ with the fact that I was serving the site from a custom directory, but I wasn't 
 
 For reference, here's my GitHub Pages config to use a custom domain, building from a folder on `master`:
 
-![GitHub Pages configuration](gh_pages.png)
+![GitHub Pages configuration](github-pages.png "GitHub Pages configuration")
 
 Today, I had the inclination to try replicating my manual build process with [GitHub Actions](https://github.com/features/actions),
 GitHub's workflow automation feature. I hadn't used Actions before, so I thought this would be a good place to start.
