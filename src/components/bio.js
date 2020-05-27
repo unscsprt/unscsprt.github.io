@@ -37,7 +37,7 @@ const Bio = () => {
         flexDirection: `column`,
       }}
     >
-      <p style={{ "margin-bottom": "1.58rem" }}>
+      <p style={{ "margin-bottom": 0 }}>
         <strong>{author.name}</strong> is a<div>{author.summary}</div>
         {` `}
       </p>
