@@ -37,10 +37,10 @@ const Bio = () => {
         flexDirection: `column`,
       }}
     >
-      <p style={{'margin-bottom': 0}}>
-        <strong>{author.name}</strong> is a<div>{author.summary}.</div>
-      </p>
-      <p style={{'margin-bottom': 0}}>
+      <strong>{author.name}</strong>
+      <p>{author.summary}</p>
+
+      <p style={{ "margin-bottom": 0 }}>
         Connect on <a href="https://github.com/craigpalermo">GitHub</a> and{" "}
         <a href="https://www.linkedin.com/in/craig-palermo-58858859/">
           LinkedIn
