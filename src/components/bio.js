@@ -41,7 +41,7 @@ const Bio = () => {
         <strong>{author.name}</strong> is a<div>{author.summary}</div>
         {` `}
       </p>
-      <div>
+      <div style={{ "margin-top": "1.58rem" }}>
         Connect on <a href="https://github.com/craigpalermo">GitHub</a> and{" "}
         <a href="https://www.linkedin.com/in/craig-palermo-58858859/">
           LinkedIn
