@@ -18,7 +18,12 @@ body.dark {
   --textLink: yellow;
   --hr: hsla(0, 0%, 100%, 0.2);
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #fff;
   }
 
@@ -26,4 +31,9 @@ body.dark {
     color: #ff2677;
     text-shadow: none;
   }
+}
+
+@font-face {
+  font-family: "Roboto", serif;
+  font-display: swap;
 }
